@@ -30,8 +30,7 @@ It simulates how industrial fans or HVAC systems work — using sensors, modes, 
 ## 📐 Circuit Diagram
 
 ![circuit_diagram.png]
-
-
+https://github.com/Parth-558/SmartFanControl/blob/3dd2533b90160d10014e9425bae6731c548ca4d5/circuit_diagram.png
 
 ---
 
