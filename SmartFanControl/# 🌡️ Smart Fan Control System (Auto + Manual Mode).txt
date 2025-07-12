@@ -28,7 +28,7 @@ It simulates how industrial fans or HVAC systems work — using sensors, modes, 
 
 ## 📐 Circuit Diagram
 
-> ![Circuit Diagram](circuit_diagram.png)
+ ![Circuit Diagram](circuit_diagram.png)
 
 ---
 
