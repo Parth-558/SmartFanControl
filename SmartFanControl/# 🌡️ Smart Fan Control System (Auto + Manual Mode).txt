@@ -57,7 +57,8 @@ It simulates how industrial fans or HVAC systems work — using sensors, modes, 
 
 ## 🔗 Tinkercad Simulation Link
 
-Paste your link here or in `extras/simulation_link.txt`:
+https://www.tinkercad.com/things/3AxsCnBshXG/editel?returnTo=%2Fdashboard
+
 
 
 ---
