@@ -1,6 +1,6 @@
 # 🌬️ Smart Fan Control System (Auto + Manual Mode)
 
-An Arduino-based smart fan controller that automatically adjusts fan speed using temperature sensor data — with an optional manual mode via pushbutton. Built using PWM, analog sensors, and embedded C logic.
+An Arduino-based smart fan controller that adjusts fan speed based on temperature, with an optional manual override via a pushbutton. Simulates real-world HVAC logic using PWM, analog sensors, and embedded C.
 
 ---
 
@@ -12,77 +12,72 @@ An Arduino-based smart fan controller that automatically adjusts fan speed using
 
 ## 🧠 Features
 
-- 🌡️ **Automatic Mode:** Adjusts fan speed based on temperature (25°C to 40°C)
-- 🔘 **Manual Override Mode:** Toggle fan on/off using a pushbutton
-- 💡 **LED Indicator:** LED shows fan ON/OFF state in manual mode
-- 💾 **Debouncing:** Accurate button handling using millis() logic
-- 🔧 **Real Industry Logic:** Simulates smart cooling used in embedded HVAC systems
+- 🌡️ **Auto Mode:** Adjusts fan speed based on temperature (25°C–40°C)
+- 🔘 **Manual Mode:** Toggle fan ON/OFF with a button
+- 💡 **LED indicator** shows fan state when in manual mode
+- 💾 **Debouncing logic** using `millis()` for clean button presses
+- 🔧 **Industry-level design**, like automotive or HVAC control systems
 
 ---
 
 ## 🔗 Components Used
 
-| Component        | Quantity |
+| Component         | Quantity |
 |------------------|----------|
-| Arduino UNO      | 1        |
-| TMP36 Temp Sensor| 1        |
-| Pushbutton       | 1        |
-| LED              | 1        |
-| 220Ω Resistor    | 2        |
-| Fan (represented by LED) | 1 |
+| Arduino UNO       | 1        |
+| TMP36 Temperature Sensor | 1 |
+| Push Button        | 1        |
+| LED (simulate fan) | 1        |
+| 220 Ω Resistors    | 2        |
+| Breadboard & Wires | As needed |
 
-🧾 Full list available in [`bom.csv`](./bom.csv)
+See full details in [`bom.csv`](./bom.csv).
 
 ---
 
 ## 📁 Files Included
 
-| File | Description |
-|------|-------------|
-| `SmartFanControl.ino` | Arduino source code |
-| `circuit.png`         | Circuit diagram |
-| `SmartFanControl.pdf` | PDF Report (optional) |
-| `bom.csv`             | Bill of materials |
-| (optional) `simulation_link.txt` | Tinkercad link |
+- `SmartFanControl.ino` – Arduino sketch (main code)  
+- `circuit.png` – Circuit diagram screenshot (Tinkercad)  
+- `bom.csv` – Bill of materials  
+- `report.pdf` – Optional detailed project report  
+- *(optionally)* `extras/` – folder to hold `simulation_link.txt`, wiring notes, etc.
 
 ---
 
 ## 🧪 How It Works
 
-- **TMP36 sensor** reads temperature
-- Arduino maps temp to fan PWM speed (0–255)
-- Pushbutton toggles between:
-  - Auto mode (PWM based on temp)
-  - Manual mode (Fan ON/OFF toggle)
-- LED lights up when fan is ON in manual mode
+1. **Auto Mode (Default):** Reads temperature via TMP36. Uses `map()` + `constrain()` to set PWM speed via `analogWrite()`.
+2. **Manual Mode:** Button toggles between ON/OFF states, controlled via global `fanState` variable. LED reflects current state.
+3. **Debouncing Logic:** Uses `millis()` and `static bool` for reliable button press detection.
 
 ---
 
-## 🚀 Applications
+## 🚀 Potential Applications
 
-- Smart room cooling systems
-- Industrial thermal control
-- HVAC automation prototype
-- Final year embedded mini-project
+- Industrial ventilation systems  
+- Smart room or server cooling  
+- HVAC prototypes in education or internships  
+- Embedded systems portfolio showcase
 
 ---
 
-## 🧰 Built With
+## 🛠️ Built With
 
-- Arduino UNO
-- Embedded C
-- Tinkercad Circuits
+- Arduino Uno  
+- Embedded C / Arduino IDE  
+- Tinkercad for circuit design
 
 ---
 
 ## 🤝 Author
 
 **Parth Pawar**  
-🛠️ Final Year Mechatronics Engineer  
-🔗 [github.com/Parth-558](https://github.com/Parth-558)
+Cheering on embedded systems innovation and learning!
 
 ---
 
 ## 📚 License
 
-This project is open-source and free to use for learning and academic purposes.
+Open-source for learning, academic projects, and personal growth.
+
