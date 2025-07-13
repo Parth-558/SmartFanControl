@@ -23,7 +23,7 @@ A beginner-to-intermediate level Arduino project that **automatically controls f
 ## 📄 Arduino Code
 
 📂 Click to view the full code here:  
-[`SmartFanControl.ino`](./SmartFanControl.ino)
+[`SmartFanControl.ino`](SmartFanControl/SmartFanControl.ino)
 
 > Contains complete logic for auto/manual fan control using temperature and push button.
 
