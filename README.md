@@ -6,7 +6,7 @@ An Arduino-based smart fan controller that adjusts fan speed based on temperatur
 
 ## 📷 Project Preview
 
-![Circuit Diagram](https://raw.githubusercontent.com/Parth-558/SmartFanControl/main/circuit.png)
+![Circuit Diagram](SmartFanControl/circuit.png)
 
 ---
 
